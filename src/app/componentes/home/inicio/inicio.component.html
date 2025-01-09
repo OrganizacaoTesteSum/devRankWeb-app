@@ -1,0 +1,40 @@
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+
+    <div class="container-menu">
+      <button class="button-menu" mat-menu-item [matMenuTriggerFor]="paginaInicio">
+        inicio<mat-icon>home</mat-icon></button>
+      <button class="button-menu" mat-menu-item
+        [matMenuTriggerFor]="Participantes">Participantes<mat-icon>sports_score</mat-icon></button>
+    </div>
+
+    <mat-menu #paginaInicio="matMenu">
+      <button mat-menu-item routerLink="">Pagina Inicial
+        <mat-icon>home</mat-icon>
+      </button>
+    </mat-menu>
+
+    <mat-menu #Participantes="matMenu">
+      <button mat-menu-item routerLink="listarCliente">Lista de Participantes<mat-icon>sports_score</mat-icon></button>
+    </mat-menu>
+
+    <app-lua class="lua-visualizacao" (click)="drawer.toggle()"></app-lua>
+
+  </mat-drawer>
+
+
+
+  <div class="example-sidenav-content">
+
+
+    <app-participante-lista></app-participante-lista>
+
+
+    <app-terra class="terra-visualizacao" (click)="drawer.toggle()">
+      
+    </app-terra>
+
+
+  </div>
+
+</mat-drawer-container>
