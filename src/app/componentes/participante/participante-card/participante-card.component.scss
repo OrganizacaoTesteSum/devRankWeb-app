@@ -154,46 +154,7 @@ container-card {
   cursor: -webkit-grabbing;
   cursor: grabbing;
 }
-.image:active + .heading::before {
-  box-shadow: 240px 20px #9b40fc, 240px 25px #9b40fc, 240px 30px #9b40fc,
-    240px 35px #9b40fc, 240px 40px #9b40fc, 242px 45px #9b40fc,
-    246px 48px #9b40fc, 251px 49px #9b40fc, 256px 48px #9b40fc,
-    260px 45px #9b40fc, 262px 40px #9b40fc;
-  animation: none;
-  filter: blur(0);
-  border-radius: 2px;
-  width: 0.45em;
-  height: 0.45em;
-  scale: 0.65;
-  transform: translateX(9em) translateY(1em);
-}
-.image:active ~ .icons::before {
-  box-shadow: 262px 35px #9b40fc, 262px 30px #9b40fc, 262px 25px #9b40fc,
-    262px 20px #9b40fc, 275px 20px #9b40fc, 275px 24px #9b40fc,
-    275px 28px #9b40fc, 275px 32px #9b40fc, 275px 36px #9b40fc,
-    275px 40px #9b40fc, 275px 44px #9b40fc, 275px 48px #9b40fc;
-  animation: none;
-  filter: blur(0);
-  border-radius: 2px;
-  width: 0.45em;
-  height: 0.45em;
-  scale: 0.65;
-  transform: translateX(9em) translateY(1em);
-}
-.image:active ~ .icons::after {
-  box-shadow: 238px 60px #9b40fc, 242px 60px #9b40fc, 246px 60px #9b40fc,
-    250px 60px #9b40fc, 254px 60px #9b40fc, 258px 60px #9b40fc,
-    262px 60px #9b40fc, 266px 60px #9b40fc, 270px 60px #9b40fc,
-    274px 60px #9b40fc, 278px 60px #9b40fc, 282px 60px #9b40fc,
-    234px 60px #9b40fc, 234px 60px #9b40fc;
-  animation: none;
-  filter: blur(0);
-  border-radius: 2px;
-  width: 0.45em;
-  height: 0.45em;
-  scale: 0.65;
-  transform: translateX(9em) translateY(1.25em);
-}
+
 
 .heading::after {
   content: "";
