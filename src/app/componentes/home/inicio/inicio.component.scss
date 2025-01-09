@@ -10,6 +10,12 @@
   border-radius: 0px;
 }
 
+.container-card {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
 .container-menu {
   display: flex;
   flex-direction: column;

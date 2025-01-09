@@ -1,4 +1,9 @@
+container-card {
+  display: flex;
+}
+
 .example-card {
+  margin: 1rem;
   max-width: 400px;
   background-color: #1C1C1C;
   color: #fff;

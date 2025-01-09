@@ -3,7 +3,7 @@
 
     <div class="container-menu">
       <button class="button-menu" mat-menu-item [matMenuTriggerFor]="paginaInicio">
-        inicio<mat-icon>home</mat-icon></button>
+        Inicio<mat-icon>home</mat-icon></button>
       <button class="button-menu" mat-menu-item
         [matMenuTriggerFor]="Participantes">Participantes<mat-icon>sports_score</mat-icon></button>
     </div>
@@ -26,12 +26,14 @@
 
   <div class="example-sidenav-content">
 
-
-    <app-participante-lista></app-participante-lista>
+    <div class="container-card">
+      <app-participante-lista></app-participante-lista>
+      <app-participante-lista></app-participante-lista>
+    </div>
 
 
     <app-terra class="terra-visualizacao" (click)="drawer.toggle()">
-      
+
     </app-terra>
 
 
