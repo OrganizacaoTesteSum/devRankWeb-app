@@ -12,6 +12,9 @@ import { provideHttpClient, withFetch } from '@angular/common/http';
 import { TerraComponent } from './componentes/cenario-espacial/terra/terra.component';
 import { LuaComponent } from './componentes/cenario-espacial/lua/lua.component';
 import { FogueteComponent } from './componentes/cenario-espacial/foguete/foguete.component';
+import { LoginComponent } from './componentes/login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 
 
@@ -23,12 +26,14 @@ import { FogueteComponent } from './componentes/cenario-espacial/foguete/foguete
     ParticipanteCardComponent,
     TerraComponent,
     LuaComponent,
-    FogueteComponent
+    FogueteComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
+    ReactiveFormsModule,
 
   ],
   providers: [

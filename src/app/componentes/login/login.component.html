@@ -1,0 +1,13 @@
+<body>
+    
+    <div class="card">
+        <form class="form" [formGroup]="formularioLogin" (ngSubmit)="onLogin()">
+            <div class="title">Bem Vindo,<br><span>Digite sua senha para continuar</span></div>
+            <input placeholder="E-mail" type="text" id="usernemail" formControlName="usernemail" autocomplete="username" class="input">
+            <input placeholder="Senha" [type]="tipoCampoSenha" id="password" formControlName="password"
+            autocomplete="current-password" class="input">
+            <button class="button-confirm" type="submit" (click)="onLogin()">Decolar →</button>
+        </form>
+    </div>
+
+</body>
